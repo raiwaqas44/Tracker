@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location-Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+    <style>
+  body{
+    background-image: url(images/road.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+      .header p
+      {
+        font-size: 40px;
+      position: relative;
+      position: absolute;
+      top: 250px;
+      left: 290px;
+      color: #be971f;
+      font-family: cursive;
+      background-size: cover;
+      }
+      .header
+      {
+        background-image: url(images2/header.jpg);
+        border-radius: 0px 0px 150px 0px;
+        border: double;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .middle
+      {
+        height:1900px;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0px 50px 0px 50px;
+        margin-top: 50px;
+        background-color: #be971f;
+      }
+      .middle .h1
+      {
+        color: #194D33;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .footer
+      {
+        background-image: url(images/bggagagaga.jpg);
+        height: 350px;
+        margin-top: 40px;
+        border-radius: 0px 100px 00px 100px;
+      }
+      .footer .h3
+      {
+        color: #FF6F00;
+        font-family: fantasy;
+        padding-top: 50px;
+        
+      }
+      .image img
+      {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        display:inline;
+        transform: rotateZ(120deg);
+        animation: infinite spin 15s;
+      }
+      @keyframes spin 
+        {
+         from{transform: rotate(0deg);}
+         to{transform: rotate(360deg);}
+        }
+    .links li
+    {
+      color: white;
+    }
+  
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-location-dot" style="color: #be971f;"></i> <strong style="color: #be971f;">Location-Tracker</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Locations</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-phone"></i>  <strong>Phone Number</strong></a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-envelope"></i> <strong>Email Address</strong></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp</strong></a></li>
+            </ul>
+            </li>
+        </ul>
+        <a href="login.html" target="_blank"><button type="button" class="btn btn-warning btn-md" style="margin-right: 20px;"><i class="fa-solid fa-user"></i> <strong>Sign Up</strong></button></a>
+       <a href="login form.html" target="_blank"> <button type="button" class="btn btn-warning btn-md" style="margin-right: 20px;"><i class="fa-solid fa-lock"></i> <strong>Login</strong></button></a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="header">
+     
+      <p class="text-xl-start"><strong><marquee>"Track Your Any Device"</marquee></strong></p>
+    </div>
+ <div class="middle">
+  <p class="h1 mx-5">Input Information for Location Tracing...</p>
+  <div class="input-group mx-5 w-50 mt-5">
+    <span class="input-group-text"><strong>Full Name</strong></span>
+    <input type="text" aria-label="First name" class="form-control" placeholder="Enter your Full Name">
+   
+    </div>
+    <br>
+    <div class="input-group mx-5 w-50">
+      <span class="input-group-text"><strong>Email Address</strong></span>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <br>
+  <p class="h5 mx-5"><strong style="color: #194D33;">Mark your Gender:</strong></p>
+  <div class="form-check form-switch mx-5">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault"><strong>Male</strong></label>
+  </div>
+  <div class="form-check form-switch mx-5">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault"><strong>Female</strong></label>
+  </div>
+  <div class="form-check form-switch mx-5">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault"><strong>Others</strong></label>
+  </div>
+  <p class="h1 mx-5">Select your device's Information...</p>
+  <p class="h5 mx-5"><strong style="color: #194D33;">Type of device:</strong></p>
+  <select class="form-select mx-5 w-50" aria-label="Default select example">
+    <option selected>-----Select your device type-----</option>
+    <option value="1">Android Phone</option>
+    <option value="2">iPhone</option>
+    <option value="3">Laptop</option>
+    <option value="4">Evo device</option>
+    <option value="5">Airpods</option>
+    <option value="6">Airbuds</option>
+    <option value="7">Internet Modem device</option>
+    <option value="8">Motor Bike</option>
+    <option value="9">Motor Car</option>
+    <option value="10">Apple Watch</option>
+    <option value="11">Smart Watch</option>
+  </select>
+  <br>
+  <p class="h4 mx-5"><strong style="color: #194D33;">Enter Sub informations of device:</strong></p>
+  <br>
+  <div class="input-group mx-5 w-50 mt-5">
+    <span class="input-group-text"><strong>Android Phones</strong></span>
+    <input type="text" aria-label="First name" class="form-control" placeholder="Enter EIMI#">
+    </div>
+    <div class="input-group mx-5 w-50 mt-5">
+      <span class="input-group-text"><strong>iPhones</strong></span>
+      <input type="text" aria-label="First name" class="form-control" placeholder="Enter Apple ID">
+      </div>
+      <div class="input-group mx-5 w-50 mt-5">
+        <span class="input-group-text"><strong>Laptop</strong></span>
+        <input type="text" aria-label="First name" class="form-control" placeholder="Enter IP Address">
+        </div>
+        <div class="input-group mx-5 w-50 mt-5">
+          <span class="input-group-text"><strong>Evo Device</strong></span>
+          <input type="text" aria-label="First name" class="form-control" placeholder="Enter MDN Number">
+          </div>
+          <div class="input-group mx-5 w-50 mt-5">
+            <span class="input-group-text"><strong>Airpods</strong></span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="Enter Code written on Box">
+            </div>
+            <div class="input-group mx-5 w-50 mt-5">
+              <span class="input-group-text"><strong>Airbuds</strong></span>
+              <input type="text" aria-label="First name" class="form-control" placeholder="Enter Code written on Box">
+              </div>
+              <div class="input-group mx-5 w-50 mt-5">
+                <span class="input-group-text"><strong>Internet Modem Device</strong></span>
+                <input type="text" aria-label="First name" class="form-control" placeholder="Enter MDN Number written on Box">
+                </div>
+                <div class="input-group mx-5 w-50 mt-5">
+                  <span class="input-group-text"><strong>Motor Bike</strong></span>
+                  <input type="text" aria-label="First name" class="form-control" placeholder="Enter Engine Number">
+                  </div>
+                  <div class="input-group mx-5 w-50 mt-5">
+                    <span class="input-group-text"><strong>Motor Car</strong></span>
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Enter Engine Number">
+                    </div>
+                    <div class="input-group mx-5 w-50 mt-5">
+                      <span class="input-group-text"><strong>Apple Watch</strong></span>
+                      <input type="text" aria-label="First name" class="form-control" placeholder="Enter i-Watch code ">
+                      </div>
+                      <div class="input-group mx-5 w-50 mt-5">
+                        <span class="input-group-text"><strong>Smart Watch</strong></span>
+                        <input type="text" aria-label="First name" class="form-control" placeholder="Enter Smart Watch code">
+                        </div>
+                        <button type="button" class="btn btn-danger mt-5 mx-5"><strong><i class="fa-solid fa-xmark"></i> Cancel</strong></button>
+                       <a href="https://www.google.com/maps/@32.0361579,72.7082658,16z?entry=ttu"v target="_blank"> <button type="button" class="btn btn-success mt-5 mx-5"><strong><i class="fa-solid fa-location-dot" style="color: #be971f;"></i> See Location</strong></button></a>
+ </div>
+<div class="footer">
+  <p class="h3 mx-5">RAI WAQAS KHARAL</p>
+  <div class="image">
+    <img src="images2/waqas.jpeg" class="img-fluid mx-5" alt="">
+    <img src="images2/IMG_E0376.JPG" class="img-fluid" style="margin-left: -45px;" alt="">
+  </div>
+  
+</body>
+</html>
